@@ -1,3 +1,4 @@
+
 package com.tastytown.backend.entity;
 
 import java.time.LocalDateTime;
@@ -17,6 +18,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -27,8 +29,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @Builder
+@Entity
+@Table(name = "order")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -38,7 +41,7 @@ public class Order {
     private String orderCode;
 
     @ManyToOne
-    @JoinColumn(name = "user)id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
@@ -48,9 +51,8 @@ public class Order {
     private LocalDateTime orderDateTime;
 
     @Enumerated(EnumType.STRING)
-    private OrderStatus orderstatus;
+    private OrderStatus orderStatus;
 
-    private String contactinfo;
+    private String contactInfo;
     private String addressInfo;
-
 }
