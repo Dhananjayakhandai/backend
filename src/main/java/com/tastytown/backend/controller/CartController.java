@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tastytown.backend.dto.CartItemRequestDTO;
 import com.tastytown.backend.dto.CartResponseDTO;
-import com.tastytown.backend.entity.Cart;
 import com.tastytown.backend.service.ICartService;
 
 import jakarta.transaction.Transactional;
