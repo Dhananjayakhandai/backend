@@ -27,6 +27,6 @@ public class OrderItem {
     private Order order;
 
     private String foodName;
-    private String foodPrice;
-    private String Quantity;
+    private double foodPrice;
+    private int Quantity;
 }

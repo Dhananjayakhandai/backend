@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tastytown.backend.constants.Role;
+//import com.tastytown.backend.constants.Role;
 import com.tastytown.backend.dto.AuthRequest;
 import com.tastytown.backend.dto.AuthResponse;
 import com.tastytown.backend.entity.User;

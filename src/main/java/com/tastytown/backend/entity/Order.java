@@ -1,4 +1,3 @@
-
 package com.tastytown.backend.entity;
 
 import java.time.LocalDateTime;
