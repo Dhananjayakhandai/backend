@@ -1,5 +1,5 @@
 server:
-  port: 1200
+  port: 100
   servlet:
     context-path: /tasty-town
 
@@ -19,7 +19,8 @@ upload:
     dir: images
     
   order:
-    delivery:
+  delivery:
     fee: 40
-tax:
+
+  tax:
     rate: 0.1
